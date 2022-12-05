@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            News Feed
+        </title>
+        <link rel="stylesheet" href="
+        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">        
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+        <div class="containerA">
+            <h2 class="heading2">Latest Updates</h2>
+
+            <a class="x" href="https://zeenews.india.com/health/green-tea-benefits-best-time-to-drink-green-tea-before-or-after-meals-2536326">
+                
+                <img class="image" src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/11/16/1118122-green-tea.jpg">
+
+                <h3 class="heading3">
+                    Green Tea benefits: Best time to drink green tea, before or after meals?
+                </h3>
+                
+            </a>
+            <div class="voting">
+                <button id="likebtn">
+                    <i class="fa fa-thumbs-up"></i>
+                </button>
+                <input type="number" id="input1" value="0" name="">
+
+                <button id="dislikebtn">
+                    <i class="fa fa-thumbs-down"></i>
+                </button>
+                <input type="number" id="input2" value="0" name="">
+            </div>
+
+            <!--Next Link-->
+            <br><hr><br>
+
+            <a class="x" href="https://www.aljazeera.com/news/2022/12/4/israeli-warplanes-strike-gaza-as-eu-calls-for-accountability">
+                
+                <img class="image" src="https://www.aljazeera.com/wp-content/uploads/2022/12/2022-12-04T000959Z_810993396_RC2NYX9WC543_RTRMADP_3_ISRAEL-PALESTINIANS-VIOLENCE.jpg?resize=770%2C513">
+
+                <h3 class="heading3">
+                    Israeli warplanes attack Gaza as EU calls for ‘accountability’
+                </h3>
+                
+            </a>
+            <div class="voting">
+                <button id="likebtn3">
+                    <i class="fa fa-thumbs-up"></i>
+                </button>
+                <input type="number" id="input3" value="0" name="">
+
+                <button id="dislikebtn4">
+                    <i class="fa fa-thumbs-down"></i>
+                </button>
+                <input type="number" id="input4" value="0" name="">
+            </div>
+
+        </div>
+        
+        <script type="text/javascript">
+            let likebtn=document.querySelector('#likebtn');
+            let dislikebtn=document.querySelector('#dislikebtn');
+            let input1=document.querySelector('#input1');
+            let input2=document.querySelector('#input2');
+
+            likebtn.addEventListener('click',()=>{
+                input1.value=parseInt(input1.value)+1;
+                input1.style.color="#12ff00";
+            })
+
+            dislikebtn.addEventListener('click',()=>{
+                input2.value=parseInt(input2.value)+1;
+                input2.style.color="#ff0000";
+            })
+
+
+            let input3=document.querySelector('#input3');
+            let input4=document.querySelector('#input4');
+
+            likebtn3.addEventListener('click',()=>{
+                input3.value=parseInt(input3.value)+1;
+                input3.style.color="#12ff00";
+            })
+
+            dislikebtn4.addEventListener('click',()=>{
+                input4.value=parseInt(input4.value)+1;
+                input4.style.color="#ff0000";
+            })
+        </script>
+    </body>
+</html>
